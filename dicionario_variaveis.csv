@@ -1,0 +1,114 @@
+Variável,Tipo de Variável,Descrição,Valores,Significado,Esse campo foi calculado a partir de outras variáveis?
+id,quantitativa discreta (Identificação),,,,Não
+segmento,qualitativa binária,Existência de registro relacionado ao paciente na base longitudinal,"{ 0, 1 }","{ não, sim }",Não
+iniciais,qualitativa nominal (Identificação),iniciais do paciente,,,Não
+matricula,qualitativa nominal (Identificação),número do prontuário no HCPA,,,Não
+origem,qualitativa nominal,grupo de origem dos dados,"{ 1, 2, 3 }","{ cetha, protahbi, proman }",Não
+cicl_rap,qualitativa binária,ciclador rápido,"{ 1, 2 }","{ sim, não }",Não
+idade,quantitativa discreta,idade,,,Não
+sexo,qualitativa binária,sexo,"{ 1, 2 }","{ masculino, feminino }",Não
+caucasiano,qualitativa nominal,etnia/cor/raça,"{ 1, 2, 3, 4 }","{ branco, negro, pardo, não branco }",Não
+est_civil,qualitativa nominal,estado civil,"{ 1, 2, 3, 4 }","{ solteiro, casado, separado, viuvo }",Não
+ocup,qualitativa nominal,ocupação,"{ 1, 2, 3, 4, 5, 6, 7 }","{ estudante, ocupação remuderada, sem ocupação, dona de casa auxilio doença, aposentado invalidez, aposentado tempo de serviço }",Não
+an_compl,quantitativa discreta,anos completos de estudo,,,Não
+imc,quantitativa continua,índice de massa corporal,,,Não
+diagnostico,qualitativa binária,tipo de transtorno bipolar,"{ 1, 2 }","{ tipo I, tipo II }",Não
+humor,qualitativa binária,estado atual de humor (eutimico = hamd<7 e ymrs<7),"{ 1, 2 }","{ eutimico, não eutimico }",Não
+est_hum_atual,qualitativa nominal,estado de humor atual SCID,"{ 1, 2, 3, 4, 5 }","{ eutimico, depressão, mania/hipomania, misto, sintomas subsindromicos }",Não
+th_psic,qualitativa binária,transtorno de humor psicótico,"{ 0, 1 }","{ ausente, presente }",Não
+nepisodios,quantitativa discreta,número de episódios total,,,Sim
+n_mania,quantitativa discreta,número de episódios maniacos (sicd A144),,,Não
+n_depres,quantitativa discreta,número de episódios depressivos (sicd A81),,,Não
+n_hipoma,quantitativa discreta,número de episódios de hipomania (sicd A162),,,Não
+n_mistos,quantitativa discreta,número de episódios mistos,,,Não
+id_inic_doenca,quantitativa discreta,idade de inicio da doença,,,Não
+dur_doenca,quantitativa discreta,duração da doença (anos),,,Sim
+pol_prim_epis,qualitativa nominal,polaridade do primeiro episódio,"{ 1, 2, 3, 4 }","{ mania, depressão, misto, hipomania }",Não
+id_med_p,quantitativa discreta,idade do primeiro uso de qualquer medicação,,,Não
+id_estab,quantitativa discreta,idade do uso de estabilizador de humor,,,Não
+psics_1,qualitativa binária,presença de psicose no primeiro episódio,"{ 1, 2 }","{ sim, não }",Não
+subst_1,qualitativa binária,primeiro episódio desencadeado por substancia,"{ 1, 2 }","{ sim, não }",Não
+tip_subs,qualitativa nominal,tipo de substancia (que desencadeou primeiro episódio?),"{ 1, 2, 3, 4, 5, 6, 7, 8 }","{ antidepressivo, maconha, cocaína, álcool, anorexogeno, estimulantes, hormônios, outros }",Não
+hospit,qualitativa binária,houve hospitalizações?,"{ 1, 2 }","{ sim, não }",Não
+quantas,quantitativa discreta,número de hospitalizações,,,Não
+id_1hos,quantitativa discreta,idade da primeira hospitalização,,,Não
+ect,qualitativa binária,realização de eletroconvulsoterapia,"{ 1, 2 }","{ sim, não }",Não
+tent_sui,qualitativa binária,tentativas de suicídio,"{ 1, 2 }","{ sim, não }",Não
+n_tent,quantitativa discreta,número de tentativas de suicídio,,,Não
+litio,qualitativa binária,lítio atual,"{ 0, 1 }","{ ausente, presente }",Não
+anticonvulsionante,qualitativa binária,anticonvulsivante atual,"{ 0, 1 }","{ ausente, presente }",Não
+antipsicoticoatipico,qualitativa binária,antipsicótico atípico,"{ 0, 1 }","{ ausente, presente }",Não
+antipsicoticoclassico,qualitativa binária,antipsicótico convencional atual,"{ 0, 1 }","{ ausente, presente }",Não
+antidepressivo,qualitativa binária,antidepressivo atual,"{ 0, 1 }","{ ausente, presente }",Não
+nclassesmedicacao,quantitativa discreta,"número de classes de medicação (soma das variáveis: litio, anticonvulsionante, antipsicoticoatipico, antipsicoticoclassico e antidepressivo)",,,Sim
+hist_fam_suicidio,qualitativa binária,histórico familiar de  suicídio,"{ 1, 2 }","{ sim, não }",Não
+hist_fam_tent_suicidio,qualitativa binária,histórico familiar de tentativas de suicídio,"{ 1, 2 }","{ sim, não }",Não
+hist_fam_tent_th,qualitativa binária,histórico familiar de transtornos de humor em parentes,"{ 0, 1 }","{ ausente, presente }",Não
+hist_fam_sud,qualitativa binária,histórico familiar de transtornos por uso de substancias,"{ 0, 1 }","{ ausente, presente }",Não
+conv_atq,qualitativa binária,convulsões/ataques,"{ 1, 2 }","{ sim, não }",Não
+convulsao12,qualitativa binária,convulsão ou ataque diagnosticado,"{ 0, 1 }","{ ausente, presente }",Não
+fer_cab,qualitativa binária,ferimentos na cabeça com perda de consciência,"{ 1, 2 }","{ sim, não }",Não
+enxaq,qualitativa binária,enxaqueca,"{ 1, 2 }","{ sim, não }",Não
+enxaqueca12,qualitativa binária,enxaqueca nos últimos 12 meses,"{ 0, 1 }","{ ausente, presente }",Não
+asma,qualitativa binária,asma,"{ 1, 2 }","{ sim, não }",Não
+diabetes,qualitativa binária,diabetes,"{ 1, 2 }","{ sim, não }",Não
+hipotir,qualitativa binária,hipotireoidismo,"{ 1, 2 }","{ sim, não }",Não
+hipertir,qualitativa binária,hipertireoidismo,"{ 1, 2 }","{ sim, não }",Não
+hipo12,qualitativa binária,hipotireoidismo últimos 12 meses,"{ 0, 1 }","{ ausente, presente }",Não
+hiper12,qualitativa binária,hipertireoidismo últimos 12 meses,"{ 0, 1 }","{ ausente, presente }",Não
+talcoollifetime,qualitativa binária,transtorno alcoólico durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tnaoalcoollifetime,qualitativa binária,transtorno de substancias durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+talcoolsubstlifetime,qualitativa binária,transtorno alcoólico e substancias durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+pan_sagp,qualitativa binária,panico sem agorafobia passado,"{ 0, 1 }","{ ausente, presente }",Não
+pan_saga,qualitativa binária,panico sem agorafobia atual,"{ 0, 1 }","{ ausente, presente }",Não
+panicosemgorafobialifetime,qualitativa binária,panico sem agorafobia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+pan_agop,qualitativa binária,panico com agorafobia passado,"{ 0, 1 }","{ ausente, presente }",Não
+pan_agoa,qualitativa binária,panico com agorafobia atual,"{ 0, 1 }","{ ausente, presente }",Não
+panicagorafobialifetime,qualitativa binária,panico com agorafobia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+anorexia_p,qualitativa binária,anorexia passado,"{ 0, 1 }","{ ausente, presente }",Não
+anorex_a,qualitativa binária,anorexia atual,"{ 0, 1 }","{ ausente, presente }",Não
+anorexialifetime,qualitativa binária,anorexia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tansiedadelifetime,qualitativa binária,transtorno de ansiedade durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tansalimentarlifetime,qualitativa binária,transtorno alimentar durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+abus_p,qualitativa binária,abuso de álcool no passado,"{ 0, 1 }","{ ausente, presente }",Não
+abus_a,qualitativa binária,abuso de álcool atual,"{ 0, 1 }","{ ausente, presente }",Não
+abusoalcoollifetime,qualitativa binária,abuso de álcool durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+dep_a,qualitativa binária,dependência de álcool atual,"{ 0, 1 }","{ ausente, presente }",Não
+dependenciaalcoolpassado,qualitativa binária,dependência de álcool no passado,"{ 0, 1 }","{ ausente, presente }",Não
+depalcoollifetime,qualitativa binária,dependência de álcool durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+abusn_p,qualitativa binária,abuso de substancias no passado,"{ 0, 1 }","{ ausente, presente }",Não
+abusn_a,qualitativa binária,abuso de substancias atual,"{ 0, 1 }","{ ausente, presente }",Não
+abusosubstllifetime,qualitativa binária,abuso de substancia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+depen_p,qualitativa binária,dependência de substancias no passado,"{ 0, 1 }","{ ausente, presente }",Não
+depen_a,qualitativa binária,dependência de substancias atual,"{ 0, 1 }","{ ausente, presente }",Não
+depsubstllifetime,qualitativa binária,dependência substancias durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+toc_pas,qualitativa binária,transtorno obsessivo-compulsivo (toc) no passado,"{ 0, 1 }","{ ausente, presente }",Não
+toc_at,qualitativa binária,transtorno obsessivo-compulsivo (toc) atual,"{ 0, 1 }","{ ausente, presente }",Não
+toclifetime,qualitativa binária,transtorno obsessivo-compulsivo (toc) durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tept_pas,qualitativa binária,transtorno de estresse pós-traumático (tept) passado,"{ 0, 1 }","{ ausente, presente }",Não
+tept_at,qualitativa binária,transtorno de estresse pós-traumático (tept) atual,"{ 0, 1 }","{ ausente, presente }",Não
+teptlifetime,qualitativa binária,transtorno de estresse pós-traumático (tept) durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+agoraf_p,qualitativa binária,agorafobia no passado,"{ 0, 1 }","{ ausente, presente }",Não
+agoraf_a,qualitativa binária,agorafobia atual,"{ 0, 1 }","{ ausente, presente }",Não
+agorafobialifetime,qualitativa binária,agorafobia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+fob_socp,qualitativa binária,fobia social no passado,"{ 0, 1 }","{ ausente, presente }",Não
+fob_soca,qualitativa binária,fobia social atual,"{ 0, 1 }","{ ausente, presente }",Não
+fobiasocialalifetime,qualitativa binária,fobia social durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+fob_espp,qualitativa binária,fobia especifica passado,"{ 0, 1 }","{ ausente, presente }",Não
+fob_espa,qualitativa binária,fobia especifica atual,"{ 0, 1 }","{ ausente, presente }",Não
+fobiaespecificaifetime,qualitativa binária,fobia especifica durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tag_pas,qualitativa binária,transtorno de ansiedade generalizada (tag) no passado,"{ 0, 1 }","{ ausente, presente }",Não
+tag_at,qualitativa binária,transtorno de ansiedade generalizada (tag) atual,"{ 0, 1 }","{ ausente, presente }",Não
+taglifetime,qualitativa binária,transtorno de ansiedade generalizada (tag) durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+ta_soep,qualitativa binária,transtorno de ansiedade sem origem especificada (soe) no passado,"{ 0, 1 }","{ ausente, presente }",Não
+ta_soea,qualitativa binária,transtorno de ansiedade sem origem especificada (soe) atual,"{ 0, 1 }","{ ausente, presente }",Não
+tanssoelifetime,qualitativa binária,transtorno de ansiedade sem origem especificada (soe) durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+bulim_ps,qualitativa binária,bulimia no passado,"{ 0, 1 }","{ ausente, presente }",Não
+bulim_at,qualitativa binária,bulimia atual,"{ 0, 1 }","{ ausente, presente }",Não
+bulimialifetime,qualitativa binária,bulimia durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+tcap_pas,qualitativa binária,transtorno compulsivo alimentar no passado,"{ 0, 1 }","{ ausente, presente }",Não
+compulsaoalimatual,qualitativa binária,transtorno compulsivo alimentar atual,"{ 0, 1 }","{ ausente, presente }",Não
+compulsalimlifetime,qualitativa binária,transtorno compulsivo alimentar durante a vida,"{ 0, 1 }","{ ausente, presente }",Não
+comorbidadelifetime1,quantitativa discreta,número de comorbidades durante a vida,,,Sim
+comorbidadepassado1,quantitativa discreta,número de comorbidades no passado,,,Sim
+comorbidadeatual1,quantitativa discreta,número de comorbidades atual,,,Sim
