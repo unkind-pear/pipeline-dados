@@ -76,13 +76,3 @@ Executa a consolidação matemática e exibe diretamente no terminal as **5 tabe
 ```bash
 python print_resultados.py
 ```
-
----
-
-## 📝 Fundamentação Científica Aplicada
-
-* **Corretude Clínica**: O banco de dados original continha uma troca de variáveis nas colunas de mania (`n_mania`) e depressão (`n_depres`). O script de curadoria desfaz essa inversão para alinhar o banco às diretrizes psiquiátricas do **DSM-5**, onde o subtipo Bipolar II apresenta média zero de episódios maníacos completos.
-* **Lógica Proposicional Lifetime**: A presença vitalícia ($L(X)$) de transtornos comórbidos (ex: pânico, ansiedade, abuso de álcool) foi reconstruída a partir da conjunção e disjunção lógica do histórico relatado atual ($X_{at}$) e passado ($X_{pas}$): 
-  $$L(X) = X_{at} \lor X_{pas} = \max(X_{at}, X_{pas})$$
-* **Tratamento de Dados Ausentes**: Em vez de imputações ingênuas pela média (que colapsam a variância natural e reduzem correlações a próximo de zero) ou deleção pareada (*pairwise deletion* - que reduziria drasticamente a amostra válida a $N=37$), utiliza-se **MICE** para estimar os nulos com base na distribuição multivariada de cada paciente, mantendo o poder estatístico total ($N=139$).
-* **Modelagem Pós-MICE**: Aplica-se regras de arredondamento e limitação de domínios legais (*clipping*), garantindo que variáveis contadas ou binárias não recebam valores impossíveis como hospitalizações negativas ou números quebrados.
