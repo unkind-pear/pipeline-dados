@@ -10,9 +10,8 @@ O projeto aborda desafios típicos de bases de dados do mundo real (dados ausent
 
 ```text
 pipeline-dados/
-├── dados_projeto/
-│   ├── db-longitudinal.xlsx         # Banco de dados original bruto (N=139)
-│   └── dicionario_variaveis.csv     # Dicionário descritivo com tipos e domínios legais
+├── graficos/                        # Pasta com os gráficos gerados pelo código
+├── dicionario_variaveis.csv         # Dicionário descritivo com tipos e domínios legais
 ├── tratar_dados.py                  # Script 1: Pipeline de limpeza, lógica lifetime e MICE
 ├── verificar_integridade.py         # Script 2: Auditoria inicial de inconsistências clínicas
 ├── analise_de_dados.py              # Script 3: EDA demográfica e testes estatísticos (Chi2, T-Test, Spearman)
